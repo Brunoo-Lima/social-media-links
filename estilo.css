@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fonte1: 'Cairo', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to top, rgb(19, 12, 44), rgb(0, 0, 0));
+  color: #ffff;
+  font-family: var(--fonte1);
+}
+
+section {
+  color: #ffff;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+header .nome {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.nome h1 {
+  font-size: 16pt;
+}
+
+.nome img {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.redes {
+  text-align: center;
+  font-size: 16pt;
+}
+
+.links {
+  display: block;
+  margin: 32px auto;
+}
+
+.links article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  border-radius: 4px;
+}
+
+.links img {
+  margin-right: 16px;
+}
+
+article {
+  margin: 10px auto;
+  max-width: 50%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+article h2 {
+  font-size: 12pt;
+  font-weight: 300;
+}
+
+section a {
+  text-decoration: none;
+  color: white;
+}
+
+article:hover {
+  transform: scale(1.1);
+}
