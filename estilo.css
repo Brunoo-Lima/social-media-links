@@ -62,12 +62,12 @@ main {
   font-size: 1.5rem;
 }
 
-.links {
+.meus-perfis {
   display: block;
   margin: 5px auto;
 }
 
-.links article {
+.meus-perfis article {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,7 +75,7 @@ main {
   border-radius: 4px;
 }
 
-.links img {
+.meus-perfis img {
   margin-right: 16px;
 }
 
@@ -100,7 +100,7 @@ article:hover {
   transform: scale(1.1);
 }
 
-footer {
+.rodape {
   font-size: 1rem;
   text-align: center;
   padding: 15px;
