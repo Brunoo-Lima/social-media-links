@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fonte1: 'Cairo', sans-serif;
+  --background-linkedin: linear-gradient(
+    90deg,
+    rgb(86, 123, 246) 0%,
+    rgba(47, 41, 157, 1) 100%
+  );
+  --background-instagram: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  --background-github: linear-gradient(58deg, #1f9b95 8%, #3983b4 98%);
+}
+
+body {
+  background-color: #0c061f;
+  color: #ffff;
+  font-family: var(--fonte1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 600px;
+  margin: auto;
+}
+
+.img-container img {
+  max-width: 100%;
+  display: block;
+  border-radius: 9999px;
+  margin: auto;
+}
+
+:is(.content-header) h1,
+h2 {
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.content-header h1 {
+  font-size: 1.5rem;
+  margin-top: 0.3rem;
+}
+
+.content-header h2 {
+  font-size: 1rem;
+  color: #ff2a2a;
+}
+
+.content {
+  max-width: 600px;
+  padding: 0.5rem 0;
+}
+
+.network-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.content-links {
+  display: flex;
+  gap: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0.875rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.links img {
+  margin-right: 10px;
+}
+
+.links:hover {
+  transform: scale(1.1);
+}
+
+.instagram {
+  background: var(--background-instagram);
+}
+
+.linkedin {
+  background: var(--background-linkedin);
+}
+
+.github {
+  background: var(--background-github);
+}
+
+@media (max-width: 767px) {
+  .content-links {
+    flex-direction: column;
+  }
+}
